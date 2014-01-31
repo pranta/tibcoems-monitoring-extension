@@ -10,7 +10,6 @@ The TibcoEMS Monitoring extension collects metrics from an Tibco EMS messaging s
 
 1. Add following jar file in lib directory.
 
-<pre>
 ```
 jms.jar
 tibjmsapps.jar
@@ -21,7 +20,6 @@ tibemsd_sec.jar
 tibjms.jar
 tibjmsadmin.jar
 ```
-</pre>
 
 2. Run "mvn clean install"
 3. Download and unzip the file 'target/TibcoEMSMonitor.zip' to \<machineagent install dir\>/monitors
