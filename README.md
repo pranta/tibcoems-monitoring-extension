@@ -8,24 +8,32 @@ The TibcoEMS Monitoring extension collects metrics from an Tibco EMS messaging s
 
 ##Installation
 
-1. Add following jar file in lib directory.
-
-```
-jms.jar
-tibjmsapps.jar
-tibjmsufo.jar
-tibrvjms.jar
-tibcrypt.jar
-tibemsd_sec.jar
-tibjms.jar
-tibjmsadmin.jar
-```
-
+1. Add following jar file in lib directory. You will find these jars in you Tibco EMS installation.
+  <pre>
+    jms.jar
+    tibjmsapps.jar
+    tibjmsufo.jar
+    tibrvjms.jar
+    tibcrypt.jar
+    tibemsd_sec.jar
+    tibjms.jar
+    tibjmsadmin.jar
+  </pre>
 2. Run "mvn clean install"
 3. Download and unzip the file 'target/TibcoEMSMonitor.zip' to \<machineagent install dir\>/monitors
 4. Open monitor.xml and configure the TibcoEMS arguments.
 5. Add the line "statistics=enabled" to tibemsd.conf
-
+  <pre>
+    ```
+     <argument name="hostname" is-required="true" default-value="localhost"/> 
+     <argument name="port" is-required="true" default-value="7222"/>
+     <argument name="userid" is-required="true" default-value="admin"/>
+     <argument name="password" is-required="true" default-value=""/>
+     <argument name="showTempQueues" is-required="false" default-value="FALSE"/>
+     <argument name="showSysQueues" is-required="false" default-value="TRUE"/>
+     <argument name="emsservername" is-required="false" default-value="EMS-SERVER"/>
+    ```
+  </pre>
 
 ## Metrics
 
