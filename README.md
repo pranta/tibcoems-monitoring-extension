@@ -10,7 +10,7 @@ The TibcoEMS Monitoring extension collects metrics from an Tibco EMS messaging s
 
 1. Run "mvn clean install"
 2. Download and unzip the file 'target/TibcoEMSMonitor.zip' to \<machineagent install dir\>/monitors
-3. Add following jar file in \<machineagent install dir\>/monitors/TibcoEMSMonitor/lib directory. You will find these jars in you Tibco EMS installation.
+3. Add the following jar files to the \<machineagent install dir\>/monitors/TibcoEMSMonitor/lib directory. You will find these jars in your Tibco EMS installation.
   <pre>
     jms.jar
     tibjmsapps.jar
