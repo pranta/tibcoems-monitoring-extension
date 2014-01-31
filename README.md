@@ -77,6 +77,8 @@ The TibcoEMS Monitoring extension collects metrics from an Tibco EMS messaging s
 | OutboundByteCount     | Total number of bytes sent |
 | OutboundMessageCount  | Total number of messages sent |
 
+#Custom Dashboard
+![](https://raw.github.com/Appdynamics/tibcoems-monitoring-extension/master/AppDynamics_Tibco_EMS.png)
 
 ##Contributing
 
